@@ -67,7 +67,7 @@ const UploadBulkStudentData = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await axios.post(`${BASE_URL}/upload-studentData`, formData, {
+      const response = await axios.post(`${BASE_URL}/upload-studentdata`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
